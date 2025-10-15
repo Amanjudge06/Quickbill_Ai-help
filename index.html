@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="QuickBill AI">
+    <title>QuickBill AI - iOS App Distribution</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .install-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .install-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .install-btn:active {
+            transform: translateY(0);
+        }
+
+        .testflight-btn {
+            background: linear-gradient(135deg, #007AFF 0%, #0051D5 100%);
+            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.4);
+        }
+
+        .testflight-btn:hover {
+            box-shadow: 0 6px 20px rgba(0, 122, 255, 0.6);
+        }
+
+        .instructions {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            text-align: left;
+        }
+
+        .instructions h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .instructions li {
+            margin-bottom: 12px;
+        }
+
+        .device-requirements {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        .device-requirements h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .device-requirements p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .apple-logo {
+            margin-top: 30px;
+            opacity: 0.3;
+            font-size: 30px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .app-icon {
+                width: 100px;
+                height: 100px;
+                font-size: 40px;
+            }
+
+            .install-btn {
+                font-size: 16px;
+                padding: 15px 30px;
+            }
+        }
+
+        .features {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="app-icon">QB</div>
+        <h1>QuickBill AI</h1>
+        <p class="subtitle">Smart billing made simple</p>
+        <div class="version-badge">Version 1.0.0</div>
+
+        <!-- Install Button - Replace # with your actual distribution link -->
+        <a href="#" class="install-btn" onclick="alert('Please replace this link with your actual app distribution manifest URL (itms-services://?action=download-manifest&url=YOUR_MANIFEST_URL)'); return false;">
+            Install App
+        </a>
+
+        <!-- TestFlight Button - Replace # with your TestFlight link -->
+        <a href="#" class="install-btn testflight-btn" onclick="alert('Please replace this link with your actual TestFlight URL'); return false;">
+            Install via TestFlight
+        </a>
+
+        <div class="features">
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-text">Fast and efficient billing system</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🤖</div>
+                <div class="feature-text">AI-powered automation</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📱</div>
+                <div class="feature-text">Optimized for iOS devices</div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>Installation Instructions</h2>
+            <ol>
+                <li>Tap the "Install App" button above</li>
+                <li>A dialog will appear asking to install the profile</li>
+                <li>Tap "Install" and enter your passcode if prompted</li>
+                <li>After installation completes, go to Settings</li>
+                <li>Navigate to General → Device Management</li>
+                <li>Trust the developer profile</li>
+                <li>Return to home screen and launch QuickBill AI</li>
+            </ol>
+        </div>
+
+        <div class="device-requirements">
+            <h3>📋 Requirements</h3>
+            <p>
+                <strong>iOS:</strong> iOS 12.0 or later<br>
+                <strong>Compatible with:</strong> iPhone, iPad, and iPod touch<br>
+                <strong>Storage:</strong> 50 MB available space
+            </p>
+        </div>
+
+        <div class="apple-logo">🍎</div>
+    </div>
+
+    <script>
+        // Detect if user is on iOS device
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        
+        if (!isIOS) {
+            // Show a message for non-iOS users
+            const container = document.querySelector('.container');
+            const warningDiv = document.createElement('div');
+            warningDiv.style.cssText = 'background: #fff3cd; padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #856404; text-align: center;';
+            warningDiv.innerHTML = '<strong>Note:</strong> This app is designed for iOS devices. Please open this page on your iPhone or iPad.';
+            container.insertBefore(warningDiv, container.firstChild);
+        }
+    </script>
+</body>
+</html>
