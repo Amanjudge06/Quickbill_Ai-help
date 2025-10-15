@@ -1,118 +1,239 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Quickbill AI — Support & Privacy</title>
-  <meta name="description" content="Support and Privacy Policy for Quickbill AI — AI-powered invoicing app." />
-  <style>
-    :root{--bg:#f7fafc;--card:#ffffff;--muted:#6b6b6b;--accent:#0b74de}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
-    .container{max-width:880px;margin:40px auto;padding:24px}
-    header{display:flex;gap:16px;align-items:center}
-    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#0b74de,#0066cc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
-    h1{margin:0;font-size:22px}
-    nav{margin-top:18px;display:flex;gap:8px}
-    a.btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;background:var(--card);box-shadow:0 1px 4px rgba(16,24,40,0.06);color:var(--accent);font-weight:600}
-    main{margin-top:24px;background:var(--card);border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
-    section{margin-bottom:20px}
-    .muted{color:var(--muted)}
-    .card{background:#fafafa;border-radius:10px;padding:14px;margin-top:10px}
-    footer{margin-top:18px;font-size:13px;color:var(--muted)}
-    .faq dt{font-weight:700;margin-top:12px}
-    .faq dd{margin:6px 0 0 0}
-    .tag{display:inline-block;padding:6px 8px;background:#eef6ff;border-radius:8px;margin-right:6px;margin-top:6px;font-size:13px}
-    @media (max-width:560px){.container{margin:20px;padding:16px}.logo{width:52px;height:52px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - QuickBill AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .last-updated {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #666;
+        }
+
+        .highlight-box {
+            background: #e6f7ff;
+            border-left: 4px solid #1890ff;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box h3 {
+            color: #1890ff;
+            margin-top: 0;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .contact-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #667eea;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">QB</div>
-      <div>
-        <h1>Quickbill AI</h1>
-        <div class="muted">Support & Privacy — Contact, help, and policy information</div>
-      </div>
-    </header>
-
-    <nav>
-      <a class="btn" href="#support">Support</a>
-      <a class="btn" href="#privacy">Privacy Policy</a>
-      <a class="btn" href="mailto:quickbillai.help@gmail.com">Contact Us</a>
-    </nav>
-
-    <main>
-      <!-- SUPPORT SECTION -->
-      <section id="support">
-        <h2>Support</h2>
-        <p class="muted">Welcome to Quickbill AI — your smart invoicing assistant. If you need help, have questions, or want to report a bug, we’re here to help.</p>
-
-        <div class="card">
-          <p><strong>Email</strong><br>
-            <a href="mailto:quickbillai.help@gmail.com">quickbillai.help@gmail.com</a></p>
-
-          <p><strong>App</strong><br>Quickbill AI (iOS &amp; Android)</p>
-
-          <p><strong>Response time</strong><br>We typically respond within 24–48 hours.</p>
-
-          <dl class="faq">
-            <dt>How do I request a new feature?</dt>
-            <dd>Send us a short email with the feature idea and how you expect it to work. We read all suggestions.</dd>
-
-            <dt>How do I report a bug?</dt>
-            <dd>Please include: app version, device model, iOS/Android version, and steps to reproduce. Attach screenshots if possible.</dd>
-
-            <dt>Can I request custom invoice templates?</dt>
-            <dd>Yes — tell us about your branding and template requirements and we’ll guide you on next steps.</dd>
-          </dl>
-
-          <p class="muted">Quick links:</p>
-          <div>
-            <span class="tag">Create invoice</span>
-            <span class="tag">Custom templates</span>
-            <span class="tag">Payment tracking</span>
-          </div>
+    <div class="container">
+        <div class="header">
+            <h1>QuickBill AI</h1>
+            <p>Privacy Policy</p>
         </div>
-      </section>
+        
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> October 15, 2025
+            </div>
 
-      <!-- PRIVACY SECTION -->
-      <section id="privacy">
-        <h2>Privacy Policy</h2>
-        <p class="muted">This Privacy Policy explains how Quickbill AI collects, uses, and protects your data. By using the app, you agree to this policy.</p>
+            <div class="highlight-box">
+                <h3>🔒 Your Privacy is Our Priority</h3>
+                <p><strong>QuickBill AI does not collect, store, or transmit any of your personal information or data.</strong> All invoice generation and processing happens locally on your device. Your data remains completely private and under your control.</p>
+            </div>
+            
+            <h2>1. Introduction</h2>
+            <p>Welcome to QuickBill AI. We are committed to protecting your privacy. This Privacy Policy explains our approach to data handling when you use our invoice generation application. Unlike many apps, QuickBill AI is designed with privacy as a core principle.</p>
+            
+            <h2>2. Information We Do NOT Collect</h2>
+            <p>QuickBill AI operates entirely on your device and does not collect or store any of the following:</p>
+            <ul>
+                <li>Personal information (name, email, phone number, address)</li>
+                <li>Business information (company details, tax IDs, banking information)</li>
+                <li>Invoice data (customer information, products, services, pricing)</li>
+                <li>Payment information or financial data</li>
+                <li>Usage data or analytics about how you use the app</li>
+                <li>Device information or identifiers</li>
+                <li>Location data</li>
+                <li>IP addresses or browsing history</li>
+            </ul>
+            
+            <h2>3. How QuickBill AI Works</h2>
+            <p>QuickBill AI is designed to operate completely offline on your device:</p>
+            <ul>
+                <li><strong>Local Processing:</strong> All invoice creation and AI features run directly on your device</li>
+                <li><strong>Local Storage:</strong> Your invoices and data are stored only on your device</li>
+                <li><strong>No Cloud Sync:</strong> We do not upload, sync, or backup your data to any servers</li>
+                <li><strong>No Account Required:</strong> You can use QuickBill AI without creating an account or providing any personal information</li>
+            </ul>
+            
+            
+            
+            <h2>4. Data Storage and Control</h2>
+            <p>You have complete control over your data:</p>
+            <ul>
+                <li>All data is stored locally on your device</li>
+                <li>You can export your invoices at any time</li>
+                <li>You can delete all data by uninstalling the app or clearing app data</li>
+                <li>No data recovery is possible from our end since we never have access to your data</li>
+            </ul>
+            
+            <h2>5. Third-Party Services</h2>
+            <p>QuickBill AI does not integrate with any third-party services for data collection, analytics, or advertising. The app functions completely independently without requiring internet connectivity for core features.</p>
+            <p><strong>Note:</strong> If you choose to export invoices via email or cloud storage, those services have their own privacy policies which we encourage you to review.</p>
+            
+            <h2>6. Permissions</h2>
+            <p>QuickBill AI may request the following device permissions solely for app functionality:</p>
+            <ul>
+                <li><strong>Storage:</strong> To save and retrieve invoice files on your device</li>
+                <li><strong>Camera (Optional):</strong> To scan receipts or business cards (processed locally)</li>
+                <li><strong>Contacts (Optional):</strong> To quickly add customer information from your device contacts</li>
+            </ul>
+            <p>These permissions are used only for the stated purposes and all data remains on your device.</p>
+            
+            <h2>7. Children's Privacy</h2>
+            <p>Since QuickBill AI does not collect any information, it is safe for users of all ages. We do not knowingly collect data from anyone, including children.</p>
+            
+            <h2>8. Data Security</h2>
+            <p>While we don't collect or store your data on our servers, we recommend:</p>
+            <ul>
+                <li>Regularly backing up your device to prevent data loss</li>
+                <li>Using device security features like PIN, password, or biometric locks</li>
+                <li>Being cautious when exporting sensitive invoice data</li>
+            </ul>
+            
+            <h2>9. Updates and Communication</h2>
+            <p>Since we don't collect your contact information, we cannot send you direct notifications. Please check the app store periodically for updates to QuickBill AI.</p>
+            
+            <h2>10. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted within the app and on our website with an updated "Last Updated" date. If we ever change our approach to data collection, we will provide prominent notice and, if required, request your consent.</p>
+            
+            <h2>11. Legal Compliance</h2>
+            <p>Since QuickBill AI does not collect, store, or process any user data, we have no data to provide in response to legal requests. Your data remains entirely under your control on your device.</p>
+            
+            <h2>12. Contact Us</h2>
+            <div class="contact-box">
+                <p>If you have any questions or concerns about this Privacy Policy or how QuickBill AI works, please contact us:</p>
+                <p><strong>Email:</strong> quickbillai.help@gmail.com</p>
+                
+            </div>
 
-        <div class="card">
-          <h3>1. Data We Collect</h3>
-          <ul>
-            <li><strong>Account info:</strong> Email address and optional display name (to help you manage invoices).</li>
-            <li><strong>Invoice data:</strong> Client names, item descriptions, amounts, and invoice history — stored if you choose to save invoices.</li>
-            <li><strong>Usage data:</strong> Non-identifying analytics to improve app performance.</li>
-          </ul>
-
-          <h3>2. How We Use Data</h3>
-          <ul>
-            <li>Provide core app functionality (create, store, send invoices).</li>
-            <li>Offer support and respond to user requests.</li>
-            <li>Improve the app via aggregated usage analytics.</li>
-          </ul>
-
-          <h3>3. Data Sharing &amp; Security</h3>
-          <p>We do not sell or share your personal data with third parties for marketing. Data is stored securely and access is limited to authorized personnel.</p>
-
-          <h3>4. Your Choices</h3>
-          <p>You can request data deletion or export by contacting us at <a href="mailto:quickbillai.help@gmail.com">quickbillai.help@gmail.com</a>. If you choose not to store invoice data in cloud sync, your invoices will remain local to the device.</p>
-
-          <h3>5. Contact</h3>
-          <p>For privacy-related questions: <a href="mailto:quickbillai.help@gmail.com">quickbillai.help@gmail.com</a></p>
-
-          <p class="muted">Last updated: <!-- to be updated when publishing --> <time datetime="2025-10-15">2025-10-15</time></p>
+            <div class="highlight-box" style="margin-top: 30px;">
+                <h3>✨ Privacy-First Design</h3>
+                <p>QuickBill AI is built on the principle that your business data should remain your business. We believe that powerful AI tools don't require sacrificing your privacy. Everything you need to create professional invoices is available right on your device, with no data collection required.</p>
+            </div>
         </div>
-      </section>
-
-      <footer>
-        <p>If you’re publishing these pages to GitHub, use the raw file URL for App Store Connect (e.g. https://github.com/yourusername/quickbill-ai/blob/main/SUPPORT.html).</p>
-      </footer>
-    </main>
-  </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 QuickBill AI. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
